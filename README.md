@@ -23,6 +23,10 @@ or run it via RStudio using:
 
 ***
 
+<img src="/app_overview.PNG" />
+
+
+
 ## Instructions
 1. Start the app
 2. Choose in the sidebar on the left side your desired pharmacogene.
