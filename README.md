@@ -23,7 +23,7 @@ https://roman-tremmel.shinyapps.io/Worldalleles
 2. Choose in the sidebar on the left side your desired pharmacogene.
 3. Choose your allele of interest.
 4. The map shows the aggregated (median or weighted median) frequencies published on https://www.pharmgkb.org/page/pgxGeneRef
-5. Click on the blue button in the top left corner of the map to change parameters e.g. world regions, world projections or colors. 
+5. Click on the blue button in the top left corner of the map to change parameters e.g. world regions, world projections or colors. (Update browser when plot is not occuring or freezed e.g. hittinh 'F5') 
 6. Under the tab "Data" you find the allelic data as downloadable table.
 7. Raw data as well as method description also can be accessed via the tabs in the sidebar on the left. 
 8. Limitation: Please be aware that the world frequency data is only as good as the data collected, reviewed and published from PharmGKB 
