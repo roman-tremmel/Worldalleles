@@ -28,7 +28,7 @@ output$DT_table_rawdata <- renderDataTable({
     datatable(.,escape = FALSE,style  = "bootstrap",filter =  list(position = 'top', clear = TRUE))
   })
 
-output$DT_table <- renderDataTable({
+output$DT_table <- renderDT({
   req(input$gene)
   req(input$allele)
   
