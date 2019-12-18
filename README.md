@@ -15,5 +15,5 @@ This is a shiny app to visualize genetic variability across worldwide population
 
 To run the app view the newest "stable" version on shinyapps.io:
 
-https://roman-tremmel.shinyapps.io/Worldalleles/
+https://roman-tremmel.shinyapps.io/Worldalleles
 
