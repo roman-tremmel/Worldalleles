@@ -1,4 +1,4 @@
-list_of_packages = c("shiny", "googleVis", "tidyverse", "DT", "colourpicker", "broom", "shinyWidgets", 
+list_of_packages = c("googleVis", "tidyverse", "DT", "colourpicker", "broom", "shinyWidgets", 
                     "shinycssloaders", "shinydashboard", "glue", "readxl", "viridis", "matrixStats")
 lapply(list_of_packages, 
        function(x) if(!require(x,character.only = TRUE)) install.packages(x))
