@@ -38,5 +38,6 @@ First, data was downloaded (accessed {result$access}; https://www.pharmgkb.org/p
 Data of countries with more than one study available, can be aggregated using a median or a weighted median approach (matrixStats::weightedMedian) using the studies’ cohort sizes as weighting factor.
 The shiny application was programmed using R version 3.6.1 (2019-07-05) with the addtional R packages {paste(sort(map_chr(sessionInfo()$otherPkgs, function(x) paste0(x$Package,'_',x$Version))), collapse =', ')}.") 
 
-help_text <- helpText("Questions, bugs, comments?",a("Send me an email",href="mailto:roman.tremmel@ikp-stuttgart.de&subject=Worldalleles"))
-
+help_text <- helpText("Questions, bugs, comments?",a("Visit github",href="https://github.com/Jimbou/Worldalleles") ,"or",
+                      a("Send me an email",href="mailto:roman.tremmel@ikp-stuttgart.de&subject=Worldalleles"))
+cite <- HTML('<a href="https://zenodo.org/badge/latestdoi/228820220"><img src="https://zenodo.org/badge/228820220.svg" alt="DOI"></a>')

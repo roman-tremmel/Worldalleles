@@ -56,7 +56,8 @@ body <- dashboardBody(
                 dataTableOutput("mapping")%>% withSpinner())), 
   tabItem(tabName = "Method",box(width = 12, 
                                  htmlOutput("rmethod_text"),
-                                 help_text))
+                                 help_text,
+                                 cite))
   ) 
   
 )
