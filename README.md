@@ -13,7 +13,7 @@ Inter-individual variability in drug metabolism can result in adverse drug react
 ## Application
 This is a shiny app to visualize genetic variability across worldwide populations of clinically important pharmacogenes according to https://www.pharmgkb.org. Detailed methods are included within the app. 
 
-To run the app view the newest "stable" version on shinyapps.io:
+To run the app, view the newest "stable" version on shinyapps.io:
 
 https://roman-tremmel.shinyapps.io/Worldalleles
 
