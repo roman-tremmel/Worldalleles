@@ -22,9 +22,8 @@ or run it via RStudio using:
     runGitHub("rom-trem/Worldalleles")
 
 ***
-
 <img src="/app_overview.PNG" />
-
+***
 
 
 ## Instructions
