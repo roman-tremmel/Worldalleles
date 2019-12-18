@@ -45,15 +45,15 @@ body <- dashboardBody(
                                                   tooltip = tooltipOptions(title = "Change map settings")),
                          htmlOutput("world_map") %>% withSpinner()),
                 tabPanel(tagList(icon("list-alt"), "Data"),
-                         dataTableOutput("DT_table")
+                         DTOutput("DT_table") %>% withSpinner()
                          )))),
     tabItem(tabName = "raw_data",
             box(title = tagList(icon("dna"),"Raw data"),
                 status = "primary",width = 12,solidHeader = T, collapsible = T,
-                dataTableOutput("DT_table_rawdata") %>% withSpinner()),
+                DTOutput("DT_table_rawdata") %>% withSpinner()),
             box(title = tagList(icon("code"), "Mapping population - country"),
                 status = "primary",width = 12,solidHeader = T, collapsible = T,
-                dataTableOutput("mapping")%>% withSpinner())), 
+                DTOutput("mapping")%>% withSpinner())), 
   tabItem(tabName = "Method",box(width = 12, 
                                  htmlOutput("rmethod_text"),
                                  help_text,
