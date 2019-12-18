@@ -26,5 +26,5 @@ https://roman-tremmel.shinyapps.io/Worldalleles
 5. Click on the blue button in the top left corner to change parameters e.g. world regions, colors or projections. 
 6. Under the tab "Data" you find the allelic data as downloadable table.
 7. Raw data as well as method can be accessed via the tabs in the sidebar on the left. 
-8. Limitation: Please be aware that the world frequency data is only as good as the data collected, reviewed and published from PharmGKB (see PMID:2299266 f
-
+8. Limitation: Please be aware that the world frequency data is only as good as the data collected, reviewed and published from PharmGKB 
+   (see PMID:2299266 for further details)
