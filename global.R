@@ -1,5 +1,5 @@
 list_of_packages = c("shiny", "googleVis", "tidyverse", "DT", "colourpicker", "broom", "shinyWidgets", 
-                    "shinycssloaders", "shinydashboard", "Cairo", "glue", "readxl")
+                    "shinycssloaders", "shinydashboard", "glue", "readxl")
 
 lapply(list_of_packages, 
        function(x) if(!require(x,character.only = TRUE)) install.packages(x))
@@ -15,7 +15,6 @@ suppressPackageStartupMessages(library(shinyWidgets))
 suppressPackageStartupMessages(library(shinycssloaders))
 suppressPackageStartupMessages(library(shinydashboard))
 #suppressPackageStartupMessages(library(shinydashboardPlus))
-suppressPackageStartupMessages(library(Cairo))
 suppressPackageStartupMessages(library(glue))
 suppressPackageStartupMessages(library(readxl))
 
