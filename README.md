@@ -1,7 +1,7 @@
 <!--
   Title: Worldalleles
   Description: Shiny App to visualize genetic variability across populations.
-  Author: Jimbou
+  Author: Roman Tremmel
 <meta name='keywords' content='ADME, pharmacogenes, allele, frequency, SNP, variant, starallele, pharmvar, pharmgkb'>
   -->
   
