@@ -26,7 +26,7 @@ output$DT_table_rawdata <- renderDataTable({
   
   dataset() %>%
     select(Country = country, Alpha2code=country_taq, Allele, Frequency = Freq, `Cohort size`=size, PMID, Source) %>% 
-    datatable(.)
+    datatable(.,escape = FALSE,style  = "bootstrap",filter =  list(position = 'top', clear = TRUE))
   })
 
 output$DT_table <- renderDataTable({
@@ -63,6 +63,9 @@ output$DT_table <- renderDataTable({
   summarized_data <- reactive({
     req(input$gene)
     req(input$allele)
+    req(dataset())
+    
+    validate(need(nrow(dataset())>=1, "Please refresh your browser"))
     
      dataset() %>% 
       filter(Allele == input$allele) %>%  
@@ -88,7 +91,8 @@ output$DT_table <- renderDataTable({
   thePlot <- reactive({
     req(input$gene)
     req(input$allele)
-    
+    req(input$average)
+    req(summarized_data())
     
     drop_colums <- switch(input$average,
                           "median" = "Weighted",
@@ -109,7 +113,10 @@ output$DT_table <- renderDataTable({
   })
   
   # render the plot
-  output$world_map <- renderGvis({thePlot()})
+  output$world_map <- renderGvis({
+    req(input$gene)
+    req(input$allele)
+    thePlot()})
  
   # reset color -------------------------------------------------------------
 
@@ -128,11 +135,9 @@ output$DT_table <- renderDataTable({
     read_excel("mapping_file_country_code.xlsx", 1) %>%
       mutate(Population = tolower(Population)) %>% 
       select(Population, Country =country, Alpha2code=country_taq) %>% 
-    datatable(.)
+    datatable(., escape = FALSE,style  = "bootstrap",filter =  list(position = 'top', clear = TRUE))
   })
     
-  
-   
  output$rmethod_text <- renderUI({
    p(method_text,style="font-size: 20px;")
   })
