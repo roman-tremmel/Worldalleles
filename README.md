@@ -17,3 +17,12 @@ To run the app, view the newest "stable" version on shinyapps.io:
 
 https://roman-tremmel.shinyapps.io/Worldalleles
 
+
+## Instructions
+1. Choose in the sidebar on the left side your desired pharmacogene.
+2. Choose your allele of interest.
+3. The map shows the frequencies published on https://www.pharmgkb.org/page/pgxGeneRef
+4. Click on the blue button in the top left corner to change parameters e.g. world regions, colors or projections. 
+5. Under the tab "Data" you find the allelic data as downloadable table.
+6. Raw data as well as method can be accessed via the tabs in the sidebar on the left.  
+
