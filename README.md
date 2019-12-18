@@ -19,6 +19,7 @@ https://roman-tremmel.shinyapps.io/Worldalleles
 
 or run it via RStudio using:
 
+    install.packages("shiny")
     shiny::runGitHub("rom-trem/Worldalleles")
 
 ***
