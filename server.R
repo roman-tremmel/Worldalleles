@@ -18,16 +18,7 @@ server <- function(input, output, session){
 # Selected Allel
 output$allele_name <- renderText({input$allele})
 
-# gene-filtered data --------------------------------------------------------------------
-output$DT_table_rawdata <- renderDataTable({
-  req(input$gene)
-  req(input$allele)
-  
-  dataset() %>%
-    select(Country = country, Alpha2code=country_taq, Allele, Frequency = Freq, `Cohort size`=size, PMID, Source) %>% 
-    datatable(.,escape = FALSE,style  = "bootstrap",filter =  list(position = 'top', clear = TRUE))
-  })
-
+# gene-allele-filtered data --------------------------------------------------------------------
 output$DT_table <- renderDT({
   req(input$gene)
   req(input$allele)
@@ -128,7 +119,14 @@ output$DT_table <- renderDT({
     updateColourInput(session, "background", value = "white")
   })
   
+  output$DT_table_rawdata <- renderDT({
+  req(input$gene)
   
+  dataset() %>%
+    select(Country = country, Alpha2code=country_taq, Allele, Frequency = Freq, `Cohort size`=size, PMID, Source) %>% 
+    datatable(.,escape = FALSE,style  = "bootstrap",filter =  list(position = 'top', clear = TRUE))
+  })
+
   
   output$mapping <- renderDT({
     read_excel("mapping_file_country_code.xlsx", 1) %>%
