@@ -19,7 +19,7 @@ https://roman-tremmel.shinyapps.io/Worldalleles
 
 or run it via RStudio using:
 
-    runGitHub("Jimbou/Worldalleles")
+    runGitHub("rom-trem/Worldalleles")
 
 ***
 
