@@ -17,7 +17,7 @@ To run the app, view the newest "stable" version on shinyapps.io:
 
 https://roman-tremmel.shinyapps.io/Worldalleles
 
-or run it via RStudio using 
+or run it via RStudio using:
 
     runGitHub("Jimbou/Worldalleles")
 
