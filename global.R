@@ -7,6 +7,7 @@ suppressPackageStartupMessages(library(broom))
 suppressPackageStartupMessages(library(shinyWidgets))
 suppressPackageStartupMessages(library(shinycssloaders))
 suppressPackageStartupMessages(library(shinydashboard))
+suppressPackageStartupMessages(library(shinydashboardPlus))
 suppressPackageStartupMessages(library(glue))
 suppressPackageStartupMessages(library(readxl))
 
