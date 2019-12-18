@@ -1,22 +1,7 @@
 list_of_packages = c("shiny", "googleVis", "tidyverse", "DT", "colourpicker", "broom", "shinyWidgets", 
-                    "shinycssloaders", "shinydashboard", "glue", "readxl")
-
+                    "shinycssloaders", "shinydashboard", "glue", "readxl", "viridis")
 lapply(list_of_packages, 
        function(x) if(!require(x,character.only = TRUE)) install.packages(x))
-
-suppressPackageStartupMessages(library(shiny))
-suppressPackageStartupMessages(library(googleVis))
-suppressPackageStartupMessages(library(tidyverse))
-suppressPackageStartupMessages(library(DT))
-#suppressPackageStartupMessages(library(shinythemes))
-suppressPackageStartupMessages(library(colourpicker))  
-suppressPackageStartupMessages(library(broom))
-suppressPackageStartupMessages(library(shinyWidgets))
-suppressPackageStartupMessages(library(shinycssloaders))
-suppressPackageStartupMessages(library(shinydashboard))
-#suppressPackageStartupMessages(library(shinydashboardPlus))
-suppressPackageStartupMessages(library(glue))
-suppressPackageStartupMessages(library(readxl))
 
 # weighted median function https://stackoverflow.com/questions/2748725/is-there-a-weighted-median-function
 
