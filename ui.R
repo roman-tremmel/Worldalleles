@@ -48,12 +48,13 @@ body <- dashboardBody(
                          DTOutput("DT_table") %>% withSpinner()
                          )))),
     tabItem(tabName = "raw_data",
+           fluidRow(
             box(title = tagList(icon("dna"),"Raw data"),
                 status = "primary",width = 12,solidHeader = T, collapsible = T,
                 DTOutput("DT_table_rawdata") %>% withSpinner()),
             box(title = tagList(icon("code"), "Mapping population - country"),
                 status = "primary",width = 12,solidHeader = T, collapsible = T,
-                DTOutput("mapping")%>% withSpinner())), 
+                DTOutput("mapping")%>% withSpinner()))), 
   tabItem(tabName = "Method",box(width = 12, 
                                  htmlOutput("rmethod_text"),
                                  help_text,
