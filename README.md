@@ -39,6 +39,6 @@ or run it via RStudio using:
 6. Under the tab "Data" you find the allelic data as downloadable table.
 7. Raw data as well as method description also can be accessed via the tabs in the sidebar on the left. 
 8. Limitation: Please be aware that the world frequency data is only as good as the data collected, reviewed and published from PharmGKB 
-   (see https://www.ncbi.nlm.nih.gov/pubmed/?term=2299266 for further details)
+ 
 
 To cite use [![DOI](https://zenodo.org/badge/228820220.svg)](https://zenodo.org/badge/latestdoi/228820220)
